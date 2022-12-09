@@ -7,17 +7,21 @@ A list of Event objects is then passed to the main business logic of the applica
 To initialize the application, first intall all the packages needed to run. Project has been developed using python 3.8.3
 
 ```
-	pip install requirements.txt
+pip install requirements.txt
 ```
 
 To launch the application, open a new terminal and use the following command
 
 ```
-	python3 main.py --input_file NAME_FILE --window-size WINDOW_SIZE
+python3 main.py --input_file NAME_FILE --window-size WINDOW_SIZE
 
 ```
 
-Where NAME_FILE is a string representing the input file to use. For experimental reasons, a file named "input.json" is provided to use with the app inside "example_files" folder.
+Where NAME_FILE is a string representing the input file to use. For experimental reasons, a file named "input.json" is provided to use with the app inside "example_files" folder. To run unit tests, just run
+
+```
+python3 -m unittest
+```
 
 # EVENTUAL IMPROVEMENTS
 
