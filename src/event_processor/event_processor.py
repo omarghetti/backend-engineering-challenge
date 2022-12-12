@@ -20,7 +20,6 @@ def process_events(file_name: str, window_size: int):
     events_list = read_events(file_name=file_name)
     start_date = get_starting_window_datetime(events_list)
     end_date = get_ending_date_window_datetime(events_list)
-    print(end_date)
     time_delta = (end_date - start_date).seconds / 60
     _calculate_moving_average(file_name, window_size, time_delta, start_date)
 
